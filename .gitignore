@@ -1,4 +1,4 @@
-# Python cache
+# Python cache files
 __pycache__/
 *.py[cod]
 
@@ -7,7 +7,7 @@ venv/
 .venv/
 env/
 
-# Datasets and generated logs
+# Machine learning datasets
 data/*.csv
 data/**/*.csv
 data/*.log
@@ -21,7 +21,7 @@ data/**/*.txt
 models/*.pkl
 models/*.joblib
 
-# Secrets
+# Credentials and secrets
 .env
 .env.*
 !.env.example
@@ -29,6 +29,8 @@ models/*.joblib
 credentials
 credentials.json
 
-# IDE files
+# IDE and operating system files
 .vscode/
 .idea/
+.DS_Store
+Thumbs.db

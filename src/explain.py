@@ -310,7 +310,6 @@ def generate_lime_explanation(background_df, model, row_index=0, top_n=10, class
         explanation = explainer.explain_instance(
             X.iloc[row_index].to_numpy(dtype=float),
             model.predict_proba,
-            labels=tuple(range(len(classes))),
             num_features=min(int(top_n), X.shape[1]),
             num_samples=1000,
         )
